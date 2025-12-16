@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources | Jesus Tribe</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/resources.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">JESUS <span>TRIBE</span></a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="resources.html" class="active">Resources</a></li>
+                <li><a href="connect.html">Connect</a></li>
+            </ul>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Resources Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Spiritual Resources</h1>
+            <p>Devotionals, scriptures, sermons, and tools for your spiritual growth</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Daily Scripture -->
+        <section class="section">
+            <div class="daily-scripture-card">
+                <h2><i class="fas fa-star"></i> Daily Scripture</h2>
+                <div id="daily-scripture">
+                    <!-- Scripture will be loaded from data.js -->
+                </div>
+                <button id="new-scripture-btn" class="btn btn-secondary">
+                    <i class="fas fa-random"></i> Get Another Scripture
+                </button>
+            </div>
+        </section>
+
+        <!-- Weekly Devotionals -->
+        <section class="section">
+            <h2 class="section-title">Weekly Devotionals</h2>
+            <div id="devotionals-container" class="devotionals-grid">
+                <!-- Devotionals will be loaded from data.js -->
+            </div>
+        </section>
+
+        <!-- Resource Categories -->
+        <section class="section">
+            <h2 class="section-title">Resource Library</h2>
+            <div class="resource-categories">
+                <div class="resource-category">
+                    <div class="category-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <h3>Sermon Notes</h3>
+                    <p>Download PDF notes from our recent messages</p>
+                    <a href="https://elibrary.insightsforliving.org/" class="btn btn-outline">View Downloads</a>
+                </div>
+               
+                <div class="resource-category">
+                    <div class="category-icon">
+                        <i class="fas fa-headphones"></i>
+                    </div>
+                    <h3>Audio Messages</h3>
+                    <p>Listen to past sermons and teachings</p>
+                    <a href="https://elibrary.insightsforliving.org/" class="btn btn-outline">Listen Now</a>
+                </div>
+               
+                <div class="resource-category">
+                    <div class="category-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Worship Playlists</h3>
+                    <p>Curated worship music for your personal time with God</p>
+                    <a href="#" class="btn btn-outline">Open Playlist</a>
+                </div>
+               
+                <div class="resource-category">
+                    <div class="category-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Video Teachings</h3>
+                    <p>Short video devotionals on relevant teen topics</p>
+                    <a href="https://elibrary.insightsforliving.org/" class="btn btn-outline">Watch Videos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bible Reading Plan -->
+        <section class="section">
+            <h2 class="section-title">Monthly Bible Reading Plan</h2>
+            <div class="reading-plan">
+                <div class="plan-card">
+                    <h3>November Focus: Gratitude & Thanksgiving</h3>
+                    <ul class="plan-list">
+                        <li><strong>Week 1:</strong> Psalms of Thanksgiving (Psalms 95, 100, 107)</li>
+                        <li><strong>Week 2:</strong> Jesus' Teachings on Thankfulness (Luke 17, Matthew 6)</li>
+                        <li><strong>Week 3:</strong> Paul's Thankful Heart (Philippians 1, Colossians 3)</li>
+                        <li><strong>Week 4:</strong> Thanksgiving in All Circumstances (1 Thessalonians 5)</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">
+                        <i class="fas fa-download"></i> Download Full Plan
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Same footer content as index.html -->
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Jesus Tribe, Covenant Nation Church, Abuja. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/resources.js"></script>
+</body>
+</html>

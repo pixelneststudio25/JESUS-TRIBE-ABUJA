@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesus Tribe | Home</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">JESUS <span>TRIBE</span></a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="connect.html">Connect</a></li>
+            </ul>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-overlay">
+            <div class="container">
+                <h1 class="hero-title">WELCOME TO JESUS TRIBE</h1>
+                <p class="hero-subtitle">A dynamic community of teenagers (13-19) in Abuja, living for Christ</p>
+                <div class="hero-btns">
+                    <a href="events.html" class="btn btn-primary">View Upcoming Events</a>
+                    <a href="connect.html" class="btn btn-secondary">Join Our Community</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Sections -->
+    <main class="container">
+        <section class="section">
+            <h2 class="section-title">What's Happening</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Weekly Events</h3>
+                    <p>Join us every Friday for worship, games, and Bible study designed specifically for teens.</p>
+                    <a href="events.html" class="feature-link">See Schedule <i class="fas fa-arrow-right"></i></a>
+                </div>
+               
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-book-bible"></i>
+                    </div>
+                    <h3>Daily Scriptures</h3>
+                    <p>Get daily encouragement from God's Word with scriptures curated for teenage life.</p>
+                    <a href="resources.html" class="feature-link">Read Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+               
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-images"></i>
+                    </div>
+                    <h3>Photo Gallery</h3>
+                    <p>Check out photos and videos from our recent gatherings, retreats, and community services.</p>
+                    <a href="gallery.html" class="feature-link">View Gallery <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scripture of the Day -->
+        <section class="scripture-section">
+            <div class="scripture-card">
+                <h3><i class="fas fa-verse"></i> Scripture of the Day</h3>
+                <p class="scripture-text">"Don't let anyone look down on you because you are young, but set an example for the believers in speech, in conduct, in love, in faith and in purity."</p>
+                <p class="scripture-ref">1 Timothy 4:12 (NIV)</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Jesus Tribe</h3>
+                    <p>Covenant Nation Church, Abuja<br>
+                    Teen Ministry (Ages 13-19)</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="events.html">Events Calendar</a></li>
+                        <li><a href="resources.html">Devotionals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/jesustribe_abj/"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/jesustribe_abj/"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <p>Email: teens@jesustribeabuja.org</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Jesus Tribe, Covenant Nation Church, Abuja. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/data.js"></script>
+    <script>
+        // Load dynamic content
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load events for homepage preview
+            loadHomeEvents();
+        });
+    </script>
+</body>
+</html>
