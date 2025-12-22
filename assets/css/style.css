@@ -623,3 +623,135 @@ a {
     object-fit: cover;
     justify-content: left;
 }
+
+/* style.css - ENHANCED MOBILE NAVIGATION */
+@media (max-width: 768px) {
+    .nav-container {
+        padding: 0.8rem 15px;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: var(--white);
+        flex-direction: column;
+        padding: 1rem 0;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: 999;
+    }
+    
+    .nav-menu.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-menu li {
+        margin: 0;
+        width: 100%;
+    }
+    
+    .nav-menu a {
+        display: block;
+        padding: 1rem 1.5rem;
+        border-bottom: 1px solid var(--light-gray);
+        font-size: 1.1rem;
+    }
+    
+    .nav-menu a:last-child {
+        border-bottom: none;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+        font-size: 1.5rem;
+        background: none;
+        border: none;
+        color: var(--text-dark);
+        padding: 0.5rem;
+        z-index: 1000;
+    }
+    
+    /* Close button when menu is open */
+    .mobile-menu-btn.active i {
+        transform: rotate(90deg);
+    }
+}
+
+/* style.css - ENHANCED HERO FOR PHONES */
+@media (max-width: 768px) {
+    .hero {
+        height: 70vh;
+        background-attachment: scroll; /* Stops parallax on mobile */
+        margin-top: 60px;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+        line-height: 1.2;
+        padding: 0 1rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+    
+    .hero-btns {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    
+    .hero-btns .btn {
+        width: 90%;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 65vh;
+    }
+    
+    .hero-title {
+        font-size: 1.7rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+}
+
+/* style.css - BETTER TOCH TARGETS */
+@media (max-width: 768px) {
+    /* Minimum touch target size */
+    .btn, button, 
+    .nav-menu a,
+    .filter-btn,
+    .gallery-filter-btn {
+        min-height: 44px;
+        min-width: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Increase form input sizes */
+    input, select, textarea {
+        font-size: 16px !important; /* Prevents iOS zoom */
+        padding: 14px 15px !important;
+    }
+    
+    /* Space out form elements */
+    .form-group {
+        margin-bottom: 1.2rem;
+    }
+}
+
